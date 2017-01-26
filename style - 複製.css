@@ -1,0 +1,159 @@
+body{
+    padding-top:50px;
+    height:100%;
+    font-family:sans-serif;
+}
+
+.panel{
+    height:70%;
+    margin-top:50px;
+}
+
+#school.panel{
+    height:90%;
+}
+#work.panel{
+    height:110%;
+}
+
+.panel-heading h4{
+    font-family:sans-serif;
+}
+
+.panel-body p{
+    font-family: sans-serif;
+}
+
+/*if i don't want thumbnail, then this img.fluid combine with .img-thumbnail rules will do too*/
+/*
+.img-fluid{
+    width: 100%;
+    max-width: 140px;
+    min-width: 100px;
+    background-color: aqua;
+
+}
+.img-thumbnail{
+    width: 100%;
+    height: auto;
+}
+*/
+
+/*
+#test{
+    background: red;
+}
+*/
+/*
+#imgDiv img{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    background: #b3cccc;
+}
+*/
+
+@media screen and (max-width:400px){/*原本是max-width:680px*/
+    span.pull-right{
+        display: none;
+    }
+}
+/*
+@media screen and (min-width:480px){
+    details summary::-webkit-details-marker{
+        display: none;
+    }
+*/
+.infoRight{
+    text-align: right;
+/*    color:red;*/
+}
+@media screen and (max-width:400px){/*原本是680px*/
+    .infoRight{
+        text-align: left;
+/*        color: green;*/
+    }
+}
+@media screen and (max-width:400px){/*原本是680px*/
+    span.infoLeft{
+        display: none;
+    }
+}
+@media screen and (max-width:991px){
+  #home.panel{
+      height: 110%;
+  }
+}
+
+@media screen and (max-width:680px){/*原本是680px*/
+    details[open] p{
+        display: none;
+    }
+    #school.panel, #work.panel{
+        height:50%;
+    }
+
+}
+@media screen and (max-width:531px){/*原本是680px*/
+  #skill.panel{
+    height:85%;
+  }
+}
+
+
+/*below are codes for carousel*/
+
+#showcase.panel{
+    height:130%;
+}
+
+@media screen and (max-width:350px){
+    #showcase.panel{
+        height: 90%;
+    }
+}
+
+.carousel{
+    margin-top:2%;
+}
+.item img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-indicators li{
+    background:#b3cccc;
+
+}
+.carousel-indicators li.active{
+    background:yellow;
+}
+
+/* I can change the carousel-control height, but it's not necessary, because it adjusts itself to the image size within it. Very cool!
+.item{
+  height:500px;
+
+}
+@media screen and (min-width:330px){
+.carousel-control{
+    height:99%;
+    }
+}
+
+@media screen and (max-width:330px){
+    .carousel-control{
+        height:50%;
+    }
+    .carousel.item{
+        height:50%;
+    }
+}
+.carousel-inner{
+    height: 90%;
+}
+.carousel-inner img{
+  padding:25px;
+  margin:auto;
+  min-height:200px;
+}
+*/
